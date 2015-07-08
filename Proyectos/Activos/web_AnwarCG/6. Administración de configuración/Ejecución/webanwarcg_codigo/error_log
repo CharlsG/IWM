@@ -1,0 +1,11 @@
+[04-Oct-2012 17:14:19] PHP Fatal error:  Call to undefined function user_hash_password() in /home/anwarcg/public_html/prueba/modules/user/user.module on line 2112
+[04-Oct-2012 17:17:15] PHP Fatal error:  Call to undefined function user_hash_password() in /home/anwarcg/public_html/prueba/modules/user/user.module on line 2112
+[09-Oct-2012 12:29:33] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 721117 bytes) in /home/anwarcg/public_html/prueba/includes/database/database.inc on line 2139
+[10-Oct-2012 17:17:06] PHP Warning:  Unterminated comment starting line 2 in /home/anwarcg/public_html/prueba/sites/all/themes/touch/templates/page.tpl.php on line 2
+[10-Oct-2012 17:17:06] PHP Fatal error:  fatal flex scanner internal error--end of buffer missed in /home/anwarcg/public_html/prueba/sites/all/themes/touch/templates/page.tpl.php on line 2
+[10-Oct-2012 17:19:05] PHP Warning:  Unterminated comment starting line 2 in /home/anwarcg/public_html/prueba/sites/all/themes/touch/templates/page.tpl.php on line 2
+[10-Oct-2012 17:19:05] PHP Fatal error:  fatal flex scanner internal error--end of buffer missed in /home/anwarcg/public_html/prueba/sites/all/themes/touch/templates/page.tpl.php on line 2
+[10-Oct-2012 17:19:13] PHP Warning:  Unterminated comment starting line 2 in /home/anwarcg/public_html/prueba/sites/all/themes/touch/templates/page.tpl.php on line 2
+[10-Oct-2012 17:19:13] PHP Fatal error:  fatal flex scanner internal error--end of buffer missed in /home/anwarcg/public_html/prueba/sites/all/themes/touch/templates/page.tpl.php on line 2
+[10-Oct-2012 17:19:37] PHP Warning:  Unterminated comment starting line 2 in /home/anwarcg/public_html/prueba/sites/all/themes/touch/templates/page.tpl.php on line 2
+[10-Oct-2012 17:19:37] PHP Fatal error:  fatal flex scanner internal error--end of buffer missed in /home/anwarcg/public_html/prueba/sites/all/themes/touch/templates/page.tpl.php on line 2
