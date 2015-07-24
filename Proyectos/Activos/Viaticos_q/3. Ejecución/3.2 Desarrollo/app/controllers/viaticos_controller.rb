@@ -6,14 +6,23 @@ class ViaticosController < ApplicationController
   # GET /viaticos
   # GET /viaticos.json
   def index
-    @viaticos = Viatico.all
+    @viaticos = Viatico.paginate(:page => params[:page], :per_page => 20).where("user_id = ? AND proyect_id = ?",current_user.id,@proyect).order('fecha  DESC')
   end
 
   # GET /viaticos/1
   # GET /viaticos/1.json
   def show
   end
-
+  def status
+    viatico = Viatico.find_by(id: params[:status])
+    viatico.status = 1
+    if viatico.save
+      respond_to do |format|
+        format.html { redirect_to [@zone,@proyect], notice: "Viatico Reportado correctamente" }
+      end
+    end
+    
+  end
   # GET /viaticos/new
   def new
     @zone = Zone.find(params[:zone_id])
@@ -79,6 +88,6 @@ class ViaticosController < ApplicationController
     end
     # Never trust parameters from the scary internet, only allow the white list through.
     def viatico_params
-      params.require(:viatico).permit(:user_id, :proyect_id, :cantidad, :fecha)
+      params.require(:viatico).permit(:user_id, :proyect_id, :cantidad, :fecha, :status)
     end
 end

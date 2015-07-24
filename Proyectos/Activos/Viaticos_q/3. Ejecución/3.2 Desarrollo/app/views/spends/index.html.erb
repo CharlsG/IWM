@@ -1,4 +1,6 @@
 <div class="col-md-6 col-md-offset-3">
+  <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
   <h2 class="proyect_name alert alert-info">
     <strong>Generacion de Reporte Viaticos</strong> 
   </h2>
@@ -22,7 +24,7 @@
     <h2 class="proyect_name alert alert-info">
       <strong>Vista de Resultado</strong> 
     </h2>
-    <%= link_to ' Descargar',  zone_proyect_spends_path(@zone,@proyect,request.parameters.merge({:format => :xls})), :onclick => "$('#index').submit()",class: "btn btn-success  margin-top fa fa-download edit "%>
+    <%= link_to ' Descargar',  zone_proyect_spends_path(@zone,@proyect,request.parameters.merge({:format => :xlsx})), :onclick => "$('#index').submit()",class: "btn btn-success  margin-top fa fa-download edit "%>
     <div class="col-md-12">
       <%= render "table"%>
     </div>
